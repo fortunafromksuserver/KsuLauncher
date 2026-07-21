@@ -34,7 +34,7 @@ run: chmod +x gradlew
 
 - name: Build APK with Gradle
 run:|
-cd MojoLauncher-3_openjdk
+cd MojoLauncher
 ./gradlew
 app_pojavlauncher:assembleDebug
 
