@@ -87,3 +87,4 @@ Any code change to this repository should be submitted as a pull request. The de
 - [oboe](https://github.com/google/oboe): [Apache License 2.0](https://github.com/google/oboe/blob/main/LICENSE).
 - Thanks to [Mineskin](https://mineskin.eu/) for providing Minecraft avatars.
 # KsuLauncher
+# KsuLauncher
