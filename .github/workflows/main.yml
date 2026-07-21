@@ -32,20 +32,8 @@ distribution: 'temurin'
 
 run: chmod +x gradlew
 
-- name: Build APK with Gradle
-run:|
-cd MojoLauncher
-./gradlew
-app_pojavlauncher:assembleDebug
+- name: Build APK with Gradle (Fix Java 8 conflict)
 
-run: ./gradlew app_pojavlauncher:assembleDebug
+run: |
 
-- name: Upload APK
-
-uses: actions/upload-artifact@v4
-
-with:
-
-name: app-debug
-
-path: app/build/outputs/apk/debug/app-debug.apk
+./gradlew app_pojavlauncher:assembleDebug -Dorg.gradle.jvmargs="-XX:MaxMetaspaceSize=512m -Xmx2g"
